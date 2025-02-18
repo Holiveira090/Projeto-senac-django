@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 201, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    width: 98%;
+    height: 95%;
+    gap: 30px;
+}
+
+#formulario {
+    padding: 30px;
+    flex: 1;
+    background-color: rgba(17, 9, 46, 1);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+#formulario h1 {
+    color: rgba(255, 255, 255, 1);
+    margin-top: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#formulario h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    padding: 10px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.input-group input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button {
+    padding: 12px;
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#cadastrar {
+    background-color: rgba(255, 201, 1, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#cadastrar:hover {
+    background-color: rgba(255, 180, 0, 1);
+}
+
+#google {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    margin-top: 20px;
+}
+
+#google:hover {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+#ou {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#formulario p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+#formulario a {
+    color: rgba(30, 74, 233, 1);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formulario a:hover {
+    text-decoration: underline;
+}
+
+#imagem {
+    flex: 1;
+    background-color: rgba(255, 201, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+#footer {
+    position: absolute;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    bottom: 0;
+    padding: 1rem;
+}

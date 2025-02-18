@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVESTECH - depósito</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'senac_projeto/css/deposito.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=paid" />
+</head>
+
+<body>
+    <header>
+        <h1>T-</h1>
+        <h2>Depósito</h2>
+        <div class="saldo">
+            <p class="saldoLetra">R$ 9.999,99</p>
+        </div>
+    </header>
+
+    <div class="ContainerDeTudo">
+
+        <div class="ContainerPainelLateral">
+            <div class="perfil">
+                <a href="{% url 'login' %}">
+                <img src="https://www.jornaloeste.com.br/imgsite/noticias/amp-006-CACHORRO.jpg" alt="Perfil" class="perfil-icon">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="menu-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/116/116350.png" alt="Ícone 1">
+                </a>
+                <a href="#" class="menu-item-principal">
+                    <img src="https://cdn-icons-png.flaticon.com/512/66/66403.png" alt="Ícone 2">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/493/493389.png" alt="Ícone 3">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://i.pinimg.com/originals/d6/dd/e7/d6dde74964329add1ad38d0ad6dc8f1e.png" alt="Ícone 4">
+                </a>
+            </div>
+            <div class="menu-bottom">
+                <a href="" class="menu-item">
+                    <img src="https://static-00.iconduck.com/assets.00/question-mark-circle-icon-512x512-3ysq58ug.png" alt="Ícone Inferior">
+                </a>
+            </div>
+        </div>
+
+    <div id="ContainerPrimario">
+        <div id="deposito">
+            <div id="deposito">
+                <!-- Botões de depósito -->
+                <div class="deposit-buttons">
+                    <button class="deposit-btn" data-valor="20">R$ 20,00</button>
+                    <button class="deposit-btn" data-valor="50">R$ 50,00</button>
+                    <button class="deposit-btn" data-valor="100">R$ 100,00</button>
+                    <button class="deposit-btn" data-valor="100">R$ 100,00</button>
+                    <button class="deposit-btn" data-valor="200">R$ 200,00</button>
+                    <button class="deposit-btn" data-valor="300">R$ 300,00</button>
+                </div>
+            
+                <!-- Labels e campos de entrada -->
+                <div class="deposit-info">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+            
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                </div>
+            
+                <!-- Botão de depósito -->
+                <button class="depositar-btn">Depositar</button>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>

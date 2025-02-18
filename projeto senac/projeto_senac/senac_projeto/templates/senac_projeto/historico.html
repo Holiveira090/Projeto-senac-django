@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVESTECH - HistoricoAplicações</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'senac_projeto/css/historico.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=paid" />
+</head>
+
+<body>
+    <header>
+        <h1>T-</h1>
+        <h2>Historico de Aplicações</h2>
+        <div class="saldo">
+            <p class="saldoLetra">R$ 9.999,99</p>
+        </div>
+    </header>
+
+    <div class="ContainerDeTudo">
+
+        <div class="ContainerPainelLateral">
+            <div class="perfil">
+                <a href="{% url 'login' %}">
+                <img src="https://www.jornaloeste.com.br/imgsite/noticias/amp-006-CACHORRO.jpg" alt="Perfil" class="perfil-icon">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="menu-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/116/116350.png" alt="Ícone 1">
+                </a>
+                <a href="#" class="menu-item-principal">
+                    <img src="https://cdn-icons-png.flaticon.com/512/66/66403.png" alt="Ícone 2">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/493/493389.png" alt="Ícone 3">
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="https://i.pinimg.com/originals/d6/dd/e7/d6dde74964329add1ad38d0ad6dc8f1e.png" alt="Ícone 4">
+                </a>
+            </div>
+            <div class="menu-bottom">
+                <a href="" class="menu-item">
+                    <img src="https://static-00.iconduck.com/assets.00/question-mark-circle-icon-512x512-3ysq58ug.png" alt="Ícone Inferior">
+                </a>
+            </div>
+        </div>
+
+    <div id="ContainerPrimario">
+        <div id="Historico">
+
+            <div class="lista ganho">
+                <span>Ganho: +R$450,00</span>
+                <span>Valor inicial: R$10,00</span>
+                <span>Valor final: R$460,00</span>
+                <span class="data">20/01/2025</span>
+            </div>
+            <div class="lista perda">
+                <span>Perda: -R$450,00</span>
+                <span>Valor inicial: R$100,00</span>
+                <span>Valor final: R$-350,00</span>
+                <span class="data">19/01/2025</span>
+            </div>
+            <div class="lista ganho">
+                <span>Ganho: +R$350,00</span>
+                <span>Valor inicial: R$150,00</span>
+                <span>Valor final: R$500,00</span>
+                <span class="data">18/01/2025</span>
+            </div>
+
+            
+            <div class="lista perda">
+                <span>Perda: -R$100,00</span>
+                <span>Valor inicial: R$500,00</span>
+                <span>Valor final: R$400,00</span>
+                <span class="data">17/01/2025</span>
+            </div>
+            <div class="lista ganho">
+                <span>Ganho: +R$200,00</span>
+                <span>Valor inicial: R$200,00</span>
+                <span>Valor final: R$400,00</span>
+                <span class="data">16/01/2025</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

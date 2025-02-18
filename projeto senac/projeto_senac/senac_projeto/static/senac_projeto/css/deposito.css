@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 201, 1, 1);
+}
+.ContainerDeTudo
+{
+    display: inline-block;
+    
+}
+#ContainerPrimario {
+    background-color: rgba(17, 9, 46, 1);
+    width: 96%;
+    height: 92%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#deposito {
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 90%;
+    /* Ajusta para ocupar mais largura */
+    height: 95%;
+    /* Ajusta para ocupar mais altura */
+    border-radius: 20px;
+    /* Bordas suavizadas */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Espaçamento uniforme entre os itens */
+    padding: 2rem;
+    overflow-y: auto;
+    /* Scroll vertical */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(123, 123, 123, 0.26) transparent;
+}
+
+header {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 201, 1, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.saldo {
+    background-color: rgba(17, 9, 46, 1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.saldoLetra {
+    color: #14c425;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.ContainerPainelLateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80px; /* Largura fixa do painel */
+    height: 100%;
+    background-color: #FFC901; /* Cor amarela do painel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Espaça itens no topo e embaixo */
+    padding: 1rem 0;
+    z-index: 10;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+.perfil {
+    margin-bottom: 2rem; /* Espaçamento abaixo do ícone de perfil */
+}
+
+.perfil-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Deixa a imagem circular */
+    object-fit: cover;
+    border: 2px solid #11092E; /* Borda escura em volta da imagem */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Ícones em coluna */
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+.menu-bottom {
+    margin-top: auto; /* Move o menu-bottom para o final */
+    padding-top: 1rem; /* Espaçamento extra entre os ícones superiores e o inferior */
+}
+
+.menu-item img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+}
+
+.menu-item img:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+.material-symbols-outlined {    
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.menu-item-principal img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    object-fit: contain;
+    background-color: #8d6e00; /* Cor amarela do painel */
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+    border-radius: 10px;
+}
+
+.menu-item-principal img:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+#deposito{
+    background-color: rgba(255, 255, 255, 0.07);
+    align-items: center;
+    width: 80%;
+    height: 110%;
+}
+
+/* Estilo para os botões de depósito (3 em cima, 3 embaixo) */
+.deposit-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Estilo para os botões de depósito */
+.deposit-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deposit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+/* Estilos das labels e inputs (alinhados um abaixo do outro) */
+.deposit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.deposit-info label {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.deposit-info input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Estilo do botão Depositar */
+.depositar-btn {
+    background-color: rgba(255, 201, 1, 1);
+    color: black;
+    border: none;
+    padding: 30px;
+    width: 200px;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.depositar-btn:hover {
+    background-color: rgba(255, 201, 1, 0.9);
+}
